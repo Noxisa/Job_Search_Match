@@ -1,1 +1,72 @@
-# Job_Search_Match
+⚙️ How It Works
+The Job Skill Matcher application analyzes a resume and a job description to determine how well a candidate matches the job requirements.
+
+🔄 Application Flow
+User Input
+
+The user provides:
+Resume text (or uploads a CV)
+Job description
+Text Preprocessing
+
+The system cleans the text:
+converts to lowercase
+removes punctuation
+normalizes formatting
+Skill Extraction
+
+The application identifies relevant skills from both:
+resume
+job description
+This is done using:
+keyword matching
+or a machine learning model (ML.NET)
+Skill Comparison
+
+Extracted skills are compared:
+matched skills
+missing skills
+Scoring System
+
+A match score is calculated based on:
+number of matched skills
+total required skills
+Example: Match Score = (Matched Skills / Required Skills) * 100
+
+Result Generation
+
+The system returns:
+Match percentage
+List of matched skills
+List of missing skills
+Display Results
+The frontend displays:
+score (e.g. 75%)
+highlighted skills
+suggestions for improvement
+🧠 Machine Learning (Optional)
+The application can use a machine learning model built with ML.NET to:
+
+improve skill detection
+understand variations in wording
+provide more accurate matching
+📊 Example Output
+Match Score: 70%
+
+Matched Skills:
+
+React
+
+JavaScript
+
+Missing Skills:
+
+Docker
+
+Kubernetes
+
+⚠️ Challenges
+Handling different resume formats (PDF, text)
+Extracting skills from unstructured data
+Ensuring accurate matching results
+Dealing with missing or incomplete information
