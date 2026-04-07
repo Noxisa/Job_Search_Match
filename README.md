@@ -94,14 +94,14 @@ and gradually adding more advanced features.
 
 Goal: Build a working skill matching system.
 
-- [x] Create ASP.NET Core Web API
-- [x] Implement `/api/match` endpoint
-- [x] Accept resume text and job description as input
-- [x] Clean and normalize text (lowercase, remove punctuation)
-- [x] Define a list of technical skills
-- [x] Implement basic skill matching logic
-- [x] Calculate match score
-- [x] Return matched and missing skills
+- [ ] Create ASP.NET Core Web API
+- [ ] Implement `/api/match` endpoint
+- [ ] Accept resume text and job description as input
+- [ ] Clean and normalize text (lowercase, remove punctuation)
+- [ ] Define a list of technical skills
+- [ ] Implement basic skill matching logic
+- [ ] Calculate match score
+- [ ] Return matched and missing skills
 
 ---
 
