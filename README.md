@@ -82,3 +82,61 @@ Kubernetes
 - Extracting skills from unstructured data
 - Ensuring accurate matching results
 - Dealing with missing or incomplete information
+
+## 🗺 Project Roadmap
+
+This project is developed in multiple stages, starting from a simple MVP 
+and gradually adding more advanced features.
+
+---
+
+### 🟢 Phase 1: MVP (Core Functionality)
+
+Goal: Build a working skill matching system.
+
+- [x] Create ASP.NET Core Web API
+- [x] Implement `/api/match` endpoint
+- [x] Accept resume text and job description as input
+- [x] Clean and normalize text (lowercase, remove punctuation)
+- [x] Define a list of technical skills
+- [x] Implement basic skill matching logic
+- [x] Calculate match score
+- [x] Return matched and missing skills
+
+---
+
+### 🔵 Phase 2: Improvements
+
+Goal: Improve accuracy and usability.
+
+- [ ] Add skill synonyms (e.g. "frontend" → "React")
+- [ ] Improve matching logic with keyword mapping
+- [ ] Separate hard skills and soft skills
+- [ ] Enhance response with more details
+- [ ] Add Swagger API documentation
+- [ ] Refactor code into services and clean architecture
+
+---
+
+### 🟣 Phase 3: Advanced Features
+
+Goal: Make the project more intelligent and production-like.
+
+- [ ] Integrate machine learning using ML.NET
+- [ ] Improve skill detection using trained model
+- [ ] Add CV file upload (PDF parsing)
+- [ ] Build frontend UI (React or Next.js)
+- [ ] Add optional database for storing results
+- [ ] Implement user authentication (optional)
+
+---
+
+### 🚀 Future Improvements
+
+- Add real-time feedback and suggestions
+- Improve UI/UX design
+- Add analytics dashboard
+- Expand skill database
+- Support multiple languages
+
+---
