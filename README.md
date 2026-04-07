@@ -63,13 +63,15 @@ The application can use a machine learning model built with ML.NET to:
 
 ## 🏗 Architecture
 
-Frontend (React / Next.js)
+- Frontend (React / Next.js)
         ↓
-ASP.NET Core API
+- ASP.NET Core API
         ↓
-Services (Skill Matching)
+- Services (Skill Matching)
         ↓
-ML.NET (optional)
+- ML.NET (optional)
+
+---
 
 ### 📊 Example Output
 Match Score: 70%
