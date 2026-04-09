@@ -50,14 +50,15 @@ to determine how well a candidate matches the job requirements.
   - suggestions for improvement
 
 ---
+## 🏗 Architecture
 
-### 🧠 Machine Learning (Optional)
-
-The application can use a machine learning model built with ML.NET to:
-
-- improve skill detection
-- understand variations in wording
-- provide more accurate matching
+- Frontend (React / Next.js)
+        ↓
+- ASP.NET Core API
+        ↓
+- Services (Skill Matching)
+        ↓
+- ML.NET (optional)
 
 ---
 
@@ -82,3 +83,61 @@ Kubernetes
 - Extracting skills from unstructured data
 - Ensuring accurate matching results
 - Dealing with missing or incomplete information
+
+## 🗺 Project Roadmap
+
+This project is developed in multiple stages, starting from a simple MVP 
+and gradually adding more advanced features.
+
+---
+
+### 🟢 Phase 1: MVP (Core Functionality)
+
+Goal: Build a working skill matching system.
+
+- [ ] Create ASP.NET Core Web API
+- [ ] Implement `/api/match` endpoint
+- [ ] Accept resume text and job description as input
+- [ ] Clean and normalize text (lowercase, remove punctuation)
+- [ ] Define a list of technical skills
+- [ ] Implement basic skill matching logic
+- [ ] Calculate match score
+- [ ] Return matched and missing skills
+
+---
+
+### 🔵 Phase 2: Improvements
+
+Goal: Improve accuracy and usability.
+
+- [ ] Add skill synonyms (e.g. "frontend" → "React")
+- [ ] Improve matching logic with keyword mapping
+- [ ] Separate hard skills and soft skills
+- [ ] Enhance response with more details
+- [ ] Add Swagger API documentation
+- [ ] Refactor code into services and clean architecture
+
+---
+
+### 🟣 Phase 3: Advanced Features
+
+Goal: Make the project more intelligent and production-like.
+
+- [ ] Integrate machine learning using ML.NET
+- [ ] Improve skill detection using trained model
+- [ ] Add CV file upload (PDF parsing)
+- [ ] Build frontend UI (React or Next.js)
+- [ ] Add optional database for storing results
+- [ ] Implement user authentication (optional)
+
+---
+
+### 🚀 Future Improvements
+
+- Add real-time feedback and suggestions
+- Improve UI/UX design
+- Add analytics dashboard
+- Expand skill database
+- Support multiple languages
+
+---
