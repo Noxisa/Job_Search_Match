@@ -1,65 +1,94 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [resumeText, setResumeText] = useState("");
+  const [jobDescription, setJobDescription] = useState("");
+  const [error, setError] = useState("");
+
+  const handleAnalyze = () => {
+    if (!resumeText.trim() || !jobDescription.trim()) {
+      setError("Please fill in both resume text and job description.");
+      return;
+    }
+
+    setError("");
+    console.log({ resumeText, jobDescription });
+  };
+
+  const isAnalyzeDisabled = !resumeText.trim() || !jobDescription.trim();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen bg-zinc-50 text-zinc-950 flex items-center justify-center px-6 py-10">
+      <div className="w-full max-w-4xl rounded-[2rem] border border-zinc-200 bg-white p-10 shadow-xl shadow-zinc-200/70">
+        <div className="mb-10 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-indigo-600">
+            Job Search Match
+          </p>
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 sm:text-5xl">
+            Analyze your resume against a job description
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-zinc-600">
+            Paste your resume and the job listing below, then click Analyze to begin matching your experience to the role.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+        <form className="space-y-6" onSubmit={(event) => event.preventDefault()}>
+          <div>
+            <label htmlFor="resume" className="block text-sm font-medium text-zinc-700">
+              Resume text
+            </label>
+            <textarea
+              id="resume"
+              rows={8}
+              value={resumeText}
+              onChange={(event) => {
+                setResumeText(event.target.value);
+                if (error) setError("");
+              }}
+              className="mt-3 w-full rounded-3xl border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+              placeholder="Paste your resume or CV here..."
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          </div>
+
+          <div>
+            <label htmlFor="jobDescription" className="block text-sm font-medium text-zinc-700">
+              Job description
+            </label>
+            <textarea
+              id="jobDescription"
+              rows={8}
+              value={jobDescription}
+              onChange={(event) => {
+                setJobDescription(event.target.value);
+                if (error) setError("");
+              }}
+              className="mt-3 w-full rounded-3xl border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+              placeholder="Paste the job description here..."
+            />
+          </div>
+
+          {error ? (
+            <p className="text-sm text-red-600">{error}</p>
+          ) : null}
+
+          <div className="flex justify-center">
+            <button
+              type="button"
+              onClick={handleAnalyze}
+              disabled={isAnalyzeDisabled}
+              className={`inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition ${
+                isAnalyzeDisabled
+                  ? "cursor-not-allowed bg-indigo-300"
+                  : "bg-indigo-600 hover:bg-indigo-700"
+              }`}
+            >
+              Analyze
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
