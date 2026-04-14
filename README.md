@@ -2,6 +2,8 @@
 
 The Job Skill Matcher application analyzes a resume and a job description 
 to determine how well a candidate matches the job requirements.
+<img width="765" height="788" alt="image" src="https://github.com/user-attachments/assets/cfd606ab-6547-4961-ae1c-6b2beb955317" />
+
 
 ### 🔄 Application Flow
 
