@@ -50,14 +50,15 @@ to determine how well a candidate matches the job requirements.
   - suggestions for improvement
 
 ---
+## 🏗 Architecture
 
-### 🧠 Machine Learning (Optional)
-
-The application can use a machine learning model built with ML.NET to:
-
-- improve skill detection
-- understand variations in wording
-- provide more accurate matching
+- Frontend (React / Next.js)
+        ↓
+- ASP.NET Core API
+        ↓
+- Services (Skill Matching)
+        ↓
+- ML.NET (optional)
 
 ---
 
