@@ -63,6 +63,9 @@ to determine how well a candidate matches the job requirements.
 ---
 
 ### 📊 Example Output
+
+<img width="765" height="788" alt="image" src="https://github.com/user-attachments/assets/7fc8ad29-9f22-411f-a912-11c556271516" />
+
 Match Score: 70%
 
 Matched Skills:
