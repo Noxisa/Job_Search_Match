@@ -1,0 +1,45 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{cs,cshtml}]
+indent_style = space
+indent_size = 4
+
+[*.cs]
+dotnet_sort_system_directives_first = true
+csharp_new_line_before_open_brace = all
+csharp_style_namespace_declarations = file_scoped:suggestion
+csharp_prefer_braces = true:suggestion
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_expression_bodied_methods = when_on_single_line:suggestion
+
+# Naming conventions
+dotnet_naming_rule.public_api_members_should_be_pascal_case.severity = warning
+dotnet_naming_rule.public_api_members_should_be_pascal_case.symbols = public_api
+dotnet_naming_rule.public_api_members_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_symbols.public_api.applicable_kinds = property, method, field, event
+dotnet_naming_symbols.public_api.applicable_accessibilities = public, protected
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+# Private fields: _camelCase
+dotnet_naming_rule.private_fields_underscore_prefix.symbols = private_fields
+dotnet_naming_rule.private_fields_underscore_prefix.style = underscore_camel_case
+dotnet_naming_rule.private_fields_underscore_prefix.severity = suggestion
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.underscore_camel_case.required_prefix = _
+dotnet_naming_style.underscore_camel_case.capitalization = camel_case
+
+# File exclusions
+[*.md]
+trim_trailing_whitespace = false
