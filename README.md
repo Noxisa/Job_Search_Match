@@ -67,17 +67,9 @@ to determine how well a candidate matches the job requirements.
 ### 📊 Example Output
 Match Score: 70%
 
-Matched Skills:
+Matched Skills: React, JavaScript
 
-React
-
-JavaScript
-
-Missing Skills:
-
-Docker
-
-Kubernetes
+Missing Skills: Docker, Kubernetes
 
 ## ⚠️ Challenges
 
