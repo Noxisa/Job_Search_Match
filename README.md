@@ -71,12 +71,16 @@ Matched Skills: React, JavaScript
 
 Missing Skills: Docker, Kubernetes
 
+---
+
 ## ⚠️ Challenges
 
 - Handling different resume formats (PDF, text)
 - Extracting skills from unstructured data
 - Ensuring accurate matching results
 - Dealing with missing or incomplete information
+
+---
 
 ## 🗺 Project Roadmap
 
@@ -133,5 +137,3 @@ Goal: Make the project more intelligent and production-like.
 - Add analytics dashboard
 - Expand skill database
 - Support multiple languages
-
----
