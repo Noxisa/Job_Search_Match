@@ -64,18 +64,6 @@ to determine how well a candidate matches the job requirements.
 
 ---
 
-## 🏗 Architecture
-
-- Frontend (React / Next.js)
-        ↓
-- ASP.NET Core API
-        ↓
-- Services (Skill Matching)
-        ↓
-- ML.NET (optional)
-
----
-
 ### 📊 Example Output
 Match Score: 70%
 
