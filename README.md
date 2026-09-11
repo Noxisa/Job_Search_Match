@@ -98,48 +98,48 @@ Missing Skills: Docker, Kubernetes
 * Dealing with missing or incomplete information
 
 
-Project Roadmap
+## Project Roadmap
 This project is developed in multiple stages, starting from a simple MVP and gradually adding more advanced features.
-Phase 1: MVP (Core Functionality)
+* Phase 1: MVP (Core Functionality)
 Goal: Build a working skill matching system.
 
-Create ASP.NET Core Web API
-Implement /api/match endpoint
-Accept resume text and job description as input
-Clean and normalize text (lowercase, remove punctuation)
-Define a list of technical skills
-Implement basic skill matching logic
-Calculate match score
-Return matched and missing skills
+- Create ASP.NET Core Web API
+- Implement /api/match endpoint
+- Accept resume text and job description as input
+- Clean and normalize text (lowercase, remove punctuation)
+- Define a list of technical skills
+- Implement basic skill matching logic
+- Calculate match score
+- Return matched and missing skills
 
-Phase 2: Improvements
+*Phase 2: Improvements
 Goal: Improve accuracy and usability.
 
-Add skill synonyms (e.g. "frontend" → "React")
-Improve matching logic with keyword mapping
-Separate hard skills and soft skills
-Enhance response with more details
-Add Swagger API documentation
-Refactor code into services and clean architecture
+- Add skill synonyms (e.g. "frontend" → "React")
+- Improve matching logic with keyword mapping
+- Separate hard skills and soft skills
+- Enhance response with more details
+- Add Swagger API documentation
+- Refactor code into services and clean architecture
 
-Phase 3: Advanced Features
+* Phase 3: Advanced Features
 Goal: Make the project more intelligent and production-like.
 
-Integrate machine learning using ML.NET
-Improve skill detection using a trained model
-Add CV file upload (PDF parsing)
-Build frontend UI (React or Next.js)
-Add optional database for storing results
-Implement user authentication (optional)
+- Integrate machine learning using ML.NET
+- Improve skill detection using a trained model
+- Add CV file upload (PDF parsing)
+- Build frontend UI (React or Next.js)
+- Add optional database for storing results
+- Implement user authentication (optional)
 
 
-Future Improvements
+* Future Improvements
 
-Add real-time feedback and suggestions
-Improve UI/UX design
-Add analytics dashboard
-Expand skill database
-Support multiple languages
+- Add real-time feedback and suggestions
+- Improve UI/UX design
+- Add analytics dashboard
+- Expand skill database
+- Support multiple languages
 
 ---
 
