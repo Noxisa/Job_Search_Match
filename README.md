@@ -8,49 +8,64 @@ to determine how well a candidate matches the job requirements.
 
 ### 🔄 Application Flow
 
-1. **User Input**
-   - The user provides:
-     - Resume text (or uploads a CV)
-     - Job description
+1. User Input
+* The user provides:
 
-2. **Text Preprocessing**
-   - The system cleans the text:
-     - converts to lowercase
-     - removes punctuation
-     - normalizes formatting
+- Resume text (or uploads a CV)
+- Job description
 
-3. **Skill Extraction**
-   - The application identifies relevant skills from both:
-     - resume
-     - job description
-   - This is done using:
-     - keyword matching
-     - or a machine learning model (ML.NET)
+2. Text Preprocessing
 
-4. **Skill Comparison**
-   - Extracted skills are compared:
-     - matched skills
-     - missing skills
+* The system cleans the text:
 
-5. **Scoring System**
-   - A match score is calculated based on:
-     - number of matched skills
-     - total required skills
+- Converts to lowercase
+- Removes punctuation
+- Normalizes formatting
 
-   Example: Match Score = (Matched Skills / Required Skills) * 100
+3. Skill Extraction
 
-   
-6. **Result Generation**
-- The system returns:
-  - Match percentage
-  - List of matched skills
-  - List of missing skills
+* The application identifies relevant skills from both:
 
-7. **Display Results**
-- The frontend displays:
-  - score (e.g. 75%)
-  - highlighted skills
-  - suggestions for improvement
+- Resume
+- Job description
+
+* This is done using:
+
+- Keyword matching
+- Or a machine learning model (ML.NET)
+
+4. Skill Comparison
+
+* Extracted skills are compared:
+
+- Matched skills
+- Missing skills
+
+5. Scoring System
+
+* A match score is calculated based on:
+
+- Number of matched skills
+- Total required skills
+
+* Example formula:
+
+Match Score = (Matched Skills / Required Skills) * 100
+6. Result Generation
+
+* The system returns:
+
+- Match percentage
+- List of matched skills
+- List of missing skills
+
+7. Display Results
+
+* The frontend displays:
+
+- core (e.g. 75%)
+- Highlighted skills
+- Suggestions for improvement
 
 ---
 ## 🏗 Architecture
