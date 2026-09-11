@@ -70,14 +70,13 @@ Match Score = (Matched Skills / Required Skills) * 100
 ---
 ## 🏗 Architecture
 
-- Frontend (React / Next.js)
+* Frontend (React / Next.js)
         ↓
-- ASP.NET Core API
+* ASP.NET Core API
         ↓
-- Services (Skill Matching)
+* Services (Skill Matching)
         ↓
-- ML.NET (optional)
-
+* ML.NET (optional)
 ---
 
 ### 📊 Example Output
