@@ -43,17 +43,20 @@ to determine how well a candidate matches the job requirements.
 
 - Matched skills
 - Missing skills
+- Extra skills (present in resume but not required)
 
 5. Scoring System
 
-* A match score is calculated based on:
+* A more advanced match score is calculated based on:
 
 - Number of matched skills
-- Total required skills
+- Weighted importance of skills (must-have vs nice-to-have)
+- Separation of hard skills and soft skills
+- Optional penalties for critical missing skills
 
-* Example formula:
+* Example formula (basic version):
 
-Match Score = (Matched Skills / Required Skills) * 100
+- Match Score = (Weighted Matched Skills / Weighted Required Skills) * 100
 6. Result Generation
 
 * The system returns:
