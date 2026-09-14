@@ -75,13 +75,8 @@ to determine how well a candidate matches the job requirements.
 ---
 ## 🏗 Architecture
 
-* Frontend (React / Next.js)
-        ↓
-* ASP.NET Core API
-        ↓
-* Services (Skill Matching)
-        ↓
-* ML.NET (optional)
+<img width="562" height="312" alt="image" src="https://github.com/user-attachments/assets/5ec3682d-dc7e-4f25-91a8-fc71f4ea71fa" />
+
 ---
 
 ### 📊 Example Output
