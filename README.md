@@ -24,18 +24,18 @@ to determine how well a candidate matches the job requirements.
 - Converts to lowercase
 - Removes punctuation
 - Normalizes formatting
+- Handles multi-word skills and special characters
 
 3. Skill Extraction
 
 * The application identifies relevant skills from both:
 
 - Resume
-- Job description
+* The application extracts relevant skills from both the resume and the job description using:
 
-* This is done using:
-
-- Keyword matching
-- Or a machine learning model (ML.NET)
+- Keyword matching against a structured skill database
+- Skill synonyms and aliases
+- Optional Machine Learning model (ML.NET) in later phases
 
 4. Skill Comparison
 
