@@ -11,8 +11,11 @@ to determine how well a candidate matches the job requirements.
 1. User Input
 * The user provides:
 
-- Resume text (or uploads a CV)
+- Resume text (or uploads a CV) 
 - Job description
+- Check if both resume and job description are present and not empty
+- Enforce maximum length limits
+- Return clear error responses (400/422) when validation fails
 
 2. Text Preprocessing
 
