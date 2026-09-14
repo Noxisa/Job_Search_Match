@@ -200,3 +200,12 @@ Goal: Make the project more intelligent and production-like.
 - Add analytics dashboard
 - Expand skill database
 - Support multiple languages
+---
+### Non-Functional Requirements (previously missing)
+
+- Validation & Error Handling – Clear and consistent API responses
+- Testing – Unit tests + integration tests from Phase 1
+- Logging – Request logging and basic metrics
+- Security – Input sanitization, rate limiting, payload size limits
+- Performance – Reasonable response time even with longer texts
+- Maintainability – Clean architecture and separation of concerns
