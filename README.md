@@ -64,6 +64,7 @@ to determine how well a candidate matches the job requirements.
 - Match percentage
 - List of matched skills
 - List of missing skills
+- Optional improvement suggestions
 
 7. Display Results
 
