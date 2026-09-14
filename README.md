@@ -67,13 +67,11 @@ to determine how well a candidate matches the job requirements.
 - Optional improvement suggestions
 
 7. Display Results
-
 * The frontend displays:
 
-- core (e.g. 75%)
-- Highlighted skills
+- Match score
+- Highlighted matched and missing skills
 - Suggestions for improvement
-
 ---
 ## 🏗 Architecture
 
