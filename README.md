@@ -80,12 +80,15 @@ to determine how well a candidate matches the job requirements.
 ---
 
 ### 📊 Example Output
-Match Score: 70%
-
-Matched Skills: React, JavaScript
-
-Missing Skills: Docker, Kubernetes
-
+{
+  "matchScore": 72,
+  "matchedSkills": ["React", "JavaScript", "TypeScript"],
+  "missingSkills": ["Docker", "Kubernetes", "CI/CD"],
+  "extraSkills": ["Vue.js"],
+  "suggestions": [
+    "Consider learning Docker and Kubernetes for containerization roles"
+  ]
+}
 ---
 
 ## ⚠️ Challenges
